@@ -14,10 +14,17 @@ public class Faktorial {
     
     public void Perkalian(int n){
         int x = 1;
+        System.out.print(n+"!=");
         for (int i = n; i != 0; i--) {
             x=i*x;
+            if (i!=1){
+                System.out.print(i+"x");
+            }
+            else{
+                System.out.println("1");
+            }
         }
-        System.out.println("Hasil             : "+x);   
+        System.out.println("Hasil             : "+x);
     }
     /**
      * @param args the command line arguments
